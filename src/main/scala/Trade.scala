@@ -1,15 +1,17 @@
-class Trade (val id: String,val symbol: String,val quantity: Int,var initialPrice: Double){
-  require(quantity > 0)
+abstract class Trade (val id: String, var initialPrice: Double){
+  def isExecutable()
 
-  private var price = initialPrice;
+//  require(quantity > 0)
+//
+//  private var price = initialPrice;
+//
+//  def getPrice = price
+//
+//  def setPrice(value: Double) = {if (value >= 0) price = value}
+//
+//  def value() = {quantity * getPrice}
 
-  def getPrice = price
-
-  def setPrice(value: Double) = {if (value >= 0) price = value}
-
-  def value() = {quantity * getPrice}
-
-  override def toString: String = s"ID: $id, Symbol:$symbol, Quantity: $quantity, Price:$price"
+  //override def toString: String = s"ID: $id, Symbol:$symbol, Quantity: $quantity, Price:$price"
 }
 
 
