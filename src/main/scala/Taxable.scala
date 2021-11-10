@@ -1,3 +1,3 @@
 trait Taxable {
-  def taxRate = 12.5
+  def taxRate = 13.75
 }

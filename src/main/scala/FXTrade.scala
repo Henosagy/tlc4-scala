@@ -1,4 +1,4 @@
-class FXTrade(override val id: String, override var initialPrice: Double) extends
+class FXTrade(override val id: String, initialPrice: Double) extends
   Trade(id: String,  initialPrice: Double) {
   override def isExecutable() = false
 

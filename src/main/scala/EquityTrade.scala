@@ -1,4 +1,4 @@
-class EquityTrade(override val id: String, override var initialPrice: Double, val symbol: String,val quantity: Int) extends
+class EquityTrade(override val id: String,  initialPrice: Double, val symbol: String,val quantity: Int) extends
   Trade(id: String, initialPrice: Double){
     require(quantity > 0)
 
