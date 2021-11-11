@@ -1,0 +1,3 @@
+object FirstApp extends App {
+
+}
