@@ -4,26 +4,18 @@ object colls extends App{
   val s = Seq(1, 2, 3, 4)
 
   remove(s, 2)
-  qq
+  for (i <- 0 until 100){
+    val s = qq
+    val ss = qq.size
+    println(s"$s    $ss")
+
+  }
 
   def remove(coll: Seq[Any], idx: Int) = {
     var buffer = new ListBuffer[Any]
     buffer.insertAll(0, coll)
     buffer.remove(idx)
     println(buffer.toSeq)
-  }
-
-  def q2 = {
-    val r = scala.util.Random
-    var buf : Set[Int] = Set()
-    for (i <- 1 to 6){
-      var num = r.nextInt(50)
-      if (!buf.contains(num)) {
-        buf += num
-      }
-
-    }
-    println(buf)
   }
 
   def qq = {
@@ -38,6 +30,6 @@ object colls extends App{
       }
     }
     while(i  < 6)
-    println(buf)
+    buf.toSet
   }
 }
