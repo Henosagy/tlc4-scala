@@ -1,7 +1,7 @@
 import MembershipLevel.MembershipLevel
 
 class Library (member: Member){
-  override def toString = s"The maximum number of books tat can be borrowed by ${member.getName} who is" +
+  override def toString = s"The maximum number of books that can be borrowed by ${member.getName} who is" +
     s" at the ${member.getMembership} membership level is $numberOfBorrowedItems"
 
   def numberOfBorrowedItems: String = {
